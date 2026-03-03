@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "rs-pos-chuva",
+  "private_key_id": "e56c4379772380b468810a97e8050ab9b7be332d",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCjSsDUTbj/vno2\n+bfb6UGCOrp/7iXHJZecNa7uDcrsOBa3nn5Xilk5sbtgdjmkzqKBKPvA071FThT7\nH6++FQLnT+HIma5I/oRXMQLkiLYgKdhuPIe7VkifWbpd/dMXYvG8nFxUPQAK78Wp\nQs4oakS5nKdDpdFFroL4WRzcv/40LHVHtX5ZRYtWfqHHgFJ1/+WHLnJCRaTPjkbt\nzKb6kEUHr3EEBR6fjBOI5AdpsvTszo3ADAzqCPzM+6rmgIfQaT2C5/zKgC35F1kI\nJd+YoD+CeOJ4LNg86Ksk1bBZrQvmsjWkkI2xW+LbCbSdeVyI9zZJqeF/JYINGfHy\n1st60pe5AgMBAAECggEAD4Sv6S0+vt1HB5j5UmarQVlb9oL3J6MosqF+b6Sza3oU\nHJytJJwjCSLdLBhoN4OkuXIf5M4qn17BizESdlXQWhPDIRmL0OeRQ6kGfZoJduqL\nJUTO4Gydh7lTBxIzgLY4Q4S3mJDYg3GQfxq4dWpOADbFRZ5JUl44l6n+XnNHkQUe\nq0UGkL9YX3O8EcgqdkB/BIvT7t6ww8ImrkaizUJIPWLCn54IeEzKhX9JO+7cjBNw\nt/RaLOu40+RZEYO1+ElddXMWsDuq5PHvcysbFOqy5cQHHs9MQdBUfPB+e2jYbGda\ngp1lf+ykKcXo7Cm5aeJAcZnO2aw/Ln5MaIUI6B7YVQKBgQDZokwgjdqMddeWkqkl\nPWzM76n4N4DDBBaUXKfgtlGM8ap8RovobwXR/g3LrVh2XQ6gImKD4/2uNEQBOAIC\ndVyA+nYcomMLz1qCsnTQFzwx/BabBKonN/EoVjeQMYUBJ8GZEq0kSODtajUAyaXK\nWugFNHEvnQSNpMkpZSWJB/dgDQKBgQDAFAhMTec5f7JA9U5djSARgpeUiP3N30he\nsF5y+cCn93rUMQncJmG+Sdm/mHdzyOoOlbdXLMm6KJTEmXgEWpgYtDJyrQF/J26+\n7Bsd3rlr07jrMRymg1MDtJcEnIv4Z1aCcz/196Lq5r4Baq3IrZhj9tijmc3PKyUQ\naLj6zLe/XQKBgGoShlQfj3OCRA9pb/NsmsjPzuHh+2oRZgftmQ0XD2xIpTVpFOu2\noPmWf5bT6BfYhzZZS/bIem4bn0GQ0LnuBaX/bO3L38Zzy8ODwxdhG7+pBEON5Hi0\n9V8Zln87A35qqBs5VRYoRyiv6SF3Js0XvZo70ybHut5mgH0ihUbikRlJAoGBAIZK\nezK+FLeCrCH2X//QN2eGomvbC3fwcCyjqqVAMI4+3MWWM4qT2yqrf24RLxLomZvw\n2Oo+Chv5W2nI0rxYipZbBhpfEvjPnQInGR5dJc5ZjKQDBkD0+AlTLXKv8LyPo1A5\nO7LAnEsXYCilaTMxC6Z4Yyae1eHODG/Yh9vxXVaRAoGBAKJ+VAxlxPujNKderDsA\ncyKKJs9DV58szAxzn6jqvYfEv2IeGWloZeEs+Efs9LgsuTkD/DKZDVmEK0SMsdhd\nw4ERkurIIvgPsxHiqA9otDGNXJxRfDSW9gnt8y4Ci+8qW9DwrNLH12R0kR+8t8Xp\nc9Rj5qj9xjf21SGwAX7Jbb4r\n-----END PRIVATE KEY-----\n",
+  "client_email": "rs-pos-deploy@rs-pos-chuva.iam.gserviceaccount.com",
+  "client_id": "115777260639906704364",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/rs-pos-deploy%40rs-pos-chuva.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
