@@ -1,2 +1,2 @@
-# Desenvolvimento-de-Solu-es-Computacionais-em-Python-com-Dados-Geoespaciais-e-Socioambientais
+# Desenvolvimento de Soluções Computacionais em Python com Dados Geoespaciais e Socioambientais
 Diagnóstico Socioambiental e Mapeamento de Áreas de Risco Pós-Tornado em Rio Bonito do Iguaçu (PR)  Este projeto tem como objetivo desenvolver um diagnóstico socioambiental integrado e realizar o mapeamento de áreas de risco afetadas por eventos extremos (tornado), utilizando modelagem geoespacial e análise de dados socioambientais.
