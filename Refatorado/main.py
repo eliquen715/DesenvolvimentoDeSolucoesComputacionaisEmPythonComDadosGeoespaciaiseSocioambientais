@@ -1,18 +1,20 @@
 # main.py
-from motor import ConexaoEE
-from interface import AppInterface
+from motor import ConexaoEE  # classe motor
+from interface import AppInterface  # classe interface
 
-# Configurações de acesso
-CONTA_SERVICO = 'digite aqui a conta'
-CHAVE_JSON = 'Digite aqui a chave json'
+# Configurações de acesso#mudar isso para um metodo construtor
+CONTA_SERVICO = 'coloque aqui a chave de serviço'
+CHAVE_JSON = 'coloque aqui a chave json'
+
 
 def iniciar():
     # 1. Autentica no Google
-    ConexaoEE.autenticar(CONTA_SERVICO, CHAVE_JSON)
-    
+    ConexaoEE.autenticar(CONTA_SERVICO, CHAVE_JSON)  #
+
     # 2. Instancia e executa a interface
     app = AppInterface()
     app.executar()
+
 
 if __name__ == "__main__":
     iniciar()
