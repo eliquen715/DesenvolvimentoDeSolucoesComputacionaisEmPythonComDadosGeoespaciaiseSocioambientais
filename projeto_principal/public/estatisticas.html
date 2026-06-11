@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estatísticas - GeoView</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+        .chart-section {
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        .chart-container {
+            position: relative;
+            height: 300px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .chart-text h2 {
+            color: var(--primary-color);
+            margin-top: 0;
+            font-size: 1.5rem;
+        }
+        .chart-text p {
+            color: var(--text-muted);
+            line-height: 1.6;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+        
+        @media (min-width: 768px) {
+            .chart-section.row {
+                flex-direction: row;
+                align-items: center;
+            }
+            .chart-section.row > * {
+                flex: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">GeoView</div>
+        <div class="nav-actions">
+            
+            <button class="btn-primary" onclick="window.location.href='index.html'">← Voltar</button>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="hero" style="margin-bottom: 3rem;">
+            <h1>Análise de Dados</h1>
+            <p>Mergulhe nas estatísticas detalhadas. Compreenda as tendências, o perfil dos usuários e o desempenho da plataforma através de representações visuais.</p>
+        </section>
+
+    
+        <div class="chart-section row">
+            <div class="chart-text">
+                <h2>Histograma de Evolução</h2>
+                <p>Este gráfico de barras ilustra a evolução da área afetada ao longo do tempo.</p>
+                <p><strong>Destaque:</strong> Notamos um crescimento constante, com o mês de Maio apresentando um pico histórico impulsionado pela implementação das novas ferramentas do GeoView</p>
+            </div>
+            <div class="chart-container">
+                <canvas id="barChart"></canvas>
+            </div>
+        </div>
+
+       
+        <div class="chart-section row">
+           
+            <div class="chart-container">
+                <canvas id="pieChart"></canvas>
+            </div>
+            <div class="chart-text">
+                <h2>Distribuição Demográfica</h2>
+                <p>O gráfico de setores (famoso gráfico de pizza) detalha a proporção de acesso dividida pelas principais regiões.</p>
+                <p>Utilizamos o formato <em>Doughnut</em> (rosquinha) por ter um visual mais limpo e moderno. Compreender essa distribuição nos ajuda a focar na infraestrutura onde a demanda é mais alta.</p>
+            </div>
+        </div>
+
+    </main>
+
+    <script>
+       
+        const ctxBar = document.getElementById('barChart').getContext('2d');
+        new Chart(ctxBar, {
+            type: 'bar',
+            data: {
+                labels: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun'], 
+                datasets: [{
+                    label: 'Quantidade de Acessos',
+                    data: [1200, 1900, 1500, 2200, 3100, 2800], 
+                    backgroundColor: '#808000', 
+                    borderRadius: 6 
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: { legend: { display: false } } 
+            }
+        });
+
+        const ctxPie = document.getElementById('pieChart').getContext('2d');
+        new Chart(ctxPie, {
+            type: 'doughnut', 
+            data: {
+                labels: ['Desmatada', 'Densa', 'Urbana', 'Água'],
+                datasets: [{
+                    data: [35, 25, 20, 20], 
+                    backgroundColor: ['#8B4513', '#006400', '#8FBC8F', '#48D1CC'], 
+                    borderWidth: 0
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { position: 'bottom' } 
+                }
+            }
+        });
+    </script>
+</body>
+</html>
