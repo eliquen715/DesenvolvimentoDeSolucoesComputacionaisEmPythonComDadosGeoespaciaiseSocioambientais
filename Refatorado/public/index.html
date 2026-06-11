@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Itaipu Parquetec - Prism Insight</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-brand">GeoView</div>
+        <div class="nav-links">
+            <a href="#">Quadro de Estatísticas</a>
+            <a href="#">Análise de Dados</a>
+            <a href="#">Suporte</a>
+        </div>
+        <div class="nav-actions">
+            <button class="btn-primary" onclick="navegar('mapa')">Visualize Map</button>
+            <div class="avatar">👤</div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="hero">
+            <div class="hero-image-wrapper">
+                <img src="Images/LogoItaipu.png" alt="Logo Itaipu Parquetec" class="hero-logo" onerror="this.style.display='none'">
+            </div>
+            <h1>Bem-vindo ao GeoView</h1>
+            <p>Uma plataforma de mapeamento, visualização e análise de dados geográficos.</p>
+        </section>
+
+        <section class="cards-grid">
+            
+            <div class="feature-card" onclick="navegar('mapa')">
+                <div class="icon-wrapper">
+                </div>
+                <h2>Visualizar Mapa</h2>
+                <p>Visualize o mapeamento com máscaras de dados geoespaciais.</p>
+                <a href="#" class="card-link">Acessar agora &rarr;</a>
+                <div class="card-graphic graphic-map">
+                    <img src="Images/MapaNdvi.jpeg" alt="Prévia do Mapa Real" class="map-preview" onerror="this.style.display='none'">
+                </div>
+            </div>
+
+            <div class="feature-card" onclick="navegar('estatisticas')">
+                <div class="icon-wrapper">
+                </div>
+                <h2>Visualizar Estatísticas</h2>
+                <p>Analise tendências e projeções futuras através de gráficos intuitivos.</p>
+                <a href="#" class="card-link">Explorar dados &rarr;</a>
+                <div class="card-graphic graphic-chart">
+                    <div class="bar" style="height: 40%; background: #45e62f;"></div>
+                    <div class="bar" style="height: 60%; background: #ffb703;"></div>
+                    <div class="bar" style="height: 30%; background: #8d480f;"></div>
+                    <div class="bar" style="height: 80%; background: #00529b;"></div>
+                    <div class="bar" style="height: 50%; background: #106e27;"></div>
+                </div>
+            </div>
+
+            <div class="feature-card" onclick="navegar('tutorial')">
+                <div class="icon-wrapper">
+                </div>
+                <h2>Como usar as ferramentas</h2>
+                <p>Aprenda a dominar todas as ferramentas do GeoView com nossos tutoriais rápidos e guias práticos.</p>
+                <a href="#" class="card-link">Ver tutoriais &rarr;</a>
+                <div class="card-graphic graphic-video">
+                    <div class="video-mockup">
+                        <div class="video-line line-1"></div>
+                        <div class="video-line line-2"></div>
+                        <div class="play-btn">▶</div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-brand">
+            <strong>GeoView</strong>
+            <p>&copy; 2026 GeoView.</p>
+        </div>
+        <div class="footer-links">
+            <a href="#">Política de Privacidade</a>
+            <a href="#">Termos de Serviço</a>
+            <a href="#">Central de Ajuda</a>
+        </div>
+    </footer>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js');
+        }
+
+        function navegar(destino) {
+            window.location.href = destino + '.html';
+        }
+    </script>
+</body>
+</html>
